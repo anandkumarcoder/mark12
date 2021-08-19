@@ -14,9 +14,9 @@ function calculateHypotenus() {
    const sumOfSquares = squareOfSides(Number(userInput[0].value), Number(userInput[1].value));
    
    lengthOfHypotenus = Math.sqrt(sumOfSquares);
-   outputDiv.innerText = "lenght of hypotneus is " + lengthOfHypotenus + "cm"
+   outputDiv.innerText = "lenght of hypotneus is " + lengthOfHypotenus + "units"
 
 }
 // variable deinfed here equal to function defined in line 6
 
-calculateBtn.addEventListener("click", calculateHypotenus)
+calculateBtn.addEventListener("click", calculateHypotenus);
