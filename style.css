@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+
+
+
+body{
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 0px;
+    background-color: var(--background-color);
+}
+
+:root{
+    --background-color : #edf2f4;
+    --primary-color : #98c1d9;
+
+}
+
+/* header */
+
+header{
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+}
+
+.header{
+    display: inline;
+    padding: 2rem 1rem;
+    
+
+   
+}
+
+/* Navigation */
+
+
+
+.navigationContainer {
+    background-color: var(--primary-color);
+    color: white;
+    
+  
+    
+    border-bottom-left-radius: 1rem;
+    width: 100%;
+    margin: auto;
+  
+    
+}
+
+
+
+
+.navigation .nav-pills {
+    text-align: center;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+}
+
+.list-non-bullets {
+    list-style: none;
+   
+   
+}
+
+
+.list-item-inline {
+   
+    /* padding: 0rem 1rem; */
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    list-style: none;
+    display: inline;
+    font-size: larger;
+    font-size: 23px;
+}
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1 rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;}
+
+    /* main body */
+
+    .main-body{
+        display: block;
+      
+
+    }
+ 
+    .angle{
+        padding: 5rem;
+        display: block;
+        margin: 10rem;
+        font-size: larger;
+        text-align: center;
+        
+
+    }
+
+    label p {
+        font-size: 20px;
+    }
+
+    .angleInput{
+        height: 5vh;
+        width: 100%;
+        width: 100%;
+        max-width:350px;
+        border-radius: 30px;
+       
+       
+        font-size: 20px;
+  
+}
+
+.quizForm{
+    font-size: 25px;
+}
+
+/* button */
+
+.button {
+    margin: 2rem;
+    
+
+}
+
+#isTriangleBtn{
+    padding: 0.5rem 2rem;
+    border: 5px solid none;
+    
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#output{
+    font-size: 25px;
+   
+    
+}
+
+#submitBtn{
+    padding: 0.5rem 2rem;
+    border: 5px solid none;
+    
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+        
+        
+    
+
+
+
+
+
+/* footer */
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    bottom: 0;
+    
+    width: 100%;
+    
+}
+
+
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: 1.8rem;
+
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+
+
+.footer .fa{
+    padding:1rem;
+    font-size:40px;
+    width : 50px;
+    text-decoration: none;
+    margin: 5px 10px;
+    color: black;
+
+}
