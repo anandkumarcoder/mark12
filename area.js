@@ -6,7 +6,27 @@ const outputDiv = document.querySelector("#output");
 
 
 function calculateArea() {
-    console.log("testing")
+    const firstSideValue = Number(side1.value);
+    const secondSideValue = Number(side2.value);
+    const thirdSideValue = Number(side3.value);
+
+    if(
+        firstSideValue + secondSideValue > thirdSideValue
+         && 
+        secondSideValue + thirdSideValue > firstSideValue
+         &&
+         firstSideValue + thirdSideValue > secondSideValue
+    ){
+        const semiPerimeter = (firstSideValue+secondSideValue+thirdSideValue)/2
+
+        const result = Math.sqrt(
+            semiPerimeter * (semiPerimeter-firstSideValue)*(semiPerimeter-secondSideValue)*(semiPerimeter-thirdSideValue));
+
+        outputDiv.innerText = `area of a triangle is using heron's formula is ${result} units`
+    } else{
+        outputDiv.innetText = "enter the valid side length"
+    }
+    
 }
 
-areaButton.addEventListener("click",calculateArea)
+areaButton.addEventListener("click",calculateArea);
