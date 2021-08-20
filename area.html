@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,56 +9,68 @@
     <link href="/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+    <header>
 
-<nav class="navigationContainer">
+        <h1 class="header">Fun with Triangles</h1>
+        <nav class="navigationContainer">
 
-    <div class="nav-Brand">
-
-        <a class="link" href="/">Fun with Triangle
-        </a>
-        <ul list-non-bullet>
-            <li class="list-item-inline">
-                <a class="link" href="/index.html">Is Triangle?
-                </a>
-            </li>
-
-            <li class="list-item-inline">
-                <a class="link" href="/quiz.html">Quiz
-                </a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="/hypotenus.html">Hypotenuse
-                </a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link link-active" href="/area.html">Area of Triangle
-                </a>
-            </li>
-        
-    </ul>
-    </div>
-</nav>
+            <div class="nav-Brand">
 
 
-    <label for="inputLabel" >
-        <p>Enter the fist side of triangle</p>
-        <input type="number" name="" id="side1">
-    </label>
- 
-    <label for="inputLabel" >
-        <p>Enter the second side of triangle</p>
-        <input type="number" name="" id="side2">
-    </label>
+                <ul list-non-bullet>
+                    <li class="list-item-inline">
+                        <a class="link" href="/index.html">Is Triangle?
+                        </a>
+                    </li>
 
-    <label for="inputLabel" >
-        <p>Enter the third side of triangle</p>
-        <input type="number" name="" id="side3">
-    </label>
+                    <li class="list-item-inline">
+                        <a class="link" href="/quiz.html">Quiz
+                        </a>
+                    </li>
+                    <li class="list-item-inline">
+                        <a class="link" href="/hypotenus.html">Hypotenuse
+                        </a>
+                    </li>
+                    <li class="list-item-inline">
+                        <a class="link link-active" href="/area.html">Area of Triangle
+                        </a>
+                    </li>
 
-    <button id="areaBtn">Calculate area</button>
-    <div id="output"></div>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
+    <main class="main-body">
+        <h2>Area of a triangle</h2>
+
+        <label for="inputLabel">
+            <p>Enter the fist side of triangle</p>
+            <input type="number" class="sidesOfTriangle"  id="side1">
+        </label>
+
+        <label for="inputLabel">
+            <p>Enter the second side of triangle</p>
+            <input type="number" class="sidesOfTriangle"id="side2">
+        </label>
+
+        <label for="inputLabel">
+            <p>Enter the third side of triangle</p>
+            <input type="number" class="sidesOfTriangle" id="side3">
+        </label>
+
+
+        <div class="button">
+            <button id="areaBtn">Calculate area</button>
+        </div>
+
+        <div id="output">
+
+        </div>
+
+    </main>
     <footer class="footer">
         <div class="footer-header">Connect with me</div>
 
@@ -73,4 +86,5 @@
 
 </body>
 <script src="area.js"></script>
+
 </html>
