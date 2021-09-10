@@ -211,6 +211,8 @@ label p{
 
 #output{
     font-size: 25px;
+    padding: 0.8rem;
+    margin: 0.8rem;
    
     
 }
@@ -297,8 +299,7 @@ footer {
     text-decoration: none;
     margin: 5px 10px;
     color: black;
-    /* border: 1px solid black;
-    border-radius: 50%; */
+   
 
 
 }
