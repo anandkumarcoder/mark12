@@ -20,14 +20,14 @@ function isTriangle() {
 
     if (sumOfAngle === 0 || sumOfAngle < 0) {
         outputDiv.innerText = "please put in valid angles"
-    } else {
-        if (sumOfAngle === 180) {
+        outputDiv.style.color = "red"
+    } else if (sumOfAngle === 180) {
             outputDiv.innerText = "yes this is a triangle";
         } else {
             outputDiv.innerText = "no this is not a triangle";
         }
 
-    }
+    
 
  
 
