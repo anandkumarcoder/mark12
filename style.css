@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 
 
-
+html{
+    height: 100%;
+}
 
 body{
     text-align: center;
     font-family: 'Balsamiq Sans', cursive;
     margin: 0px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: var(--background-color);
 }
 
@@ -49,35 +54,53 @@ header{
 }
 
 
+.nav-Brand ul{
+    display: inline;
+    
+    }
 
-
-.navigation .nav-pills {
-    text-align: center;
-}
-
-.navigation .link {
-    color: white;
-}
-
-.navigation .nav-brand {
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-.navigation .link-active {
-    font-weight: bold;
-}
-
-.list-non-bullets {
-    list-style: none;
+.nav-Brand  ul li{
+    display: inline-block;
+    padding: 1.5rem  1rem;
+    
    
-   
+
+
+}
+
+.nav-Brand  ul li a{
+    
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight:lighter
+    
+}
+
+.nav-Brand  ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: whitesmoke;
+    display: block;
+    margin:auto;
+
+    transition: 0.3s;
+
+
+}
+
+.nav-Brand  ul li:hover:after{
+    width: 100%;
 }
 
 
+
+
+/* 
 .list-item-inline {
    
-    /* padding: 0rem 1rem; */
+   
     padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -93,7 +116,7 @@ header{
     margin-top: 1rem;
     margin-bottom: 1rem;
 color:black
-}
+} */
 
     /* main body */
 
@@ -238,15 +261,16 @@ label p{
 
 /* footer */
 
-.footer {
+footer {
     background-color: var(--primary-color);
-    padding: 2rem 1rem;
-    margin-top: 2rem;
+    padding: 1.5rem 1rem;
+    
     text-align: center;
     color: black;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    bottom: 0;
+    margin-top: auto;
+  
     
     width: 100%;
     
@@ -268,10 +292,13 @@ label p{
 
 .footer .fa{
     padding:1rem;
-    font-size:40px;
+    font-size:30px;
     width : 50px;
     text-decoration: none;
     margin: 5px 10px;
     color: black;
+    /* border: 1px solid black;
+    border-radius: 50%; */
+
 
 }

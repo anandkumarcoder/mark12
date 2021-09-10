@@ -24,9 +24,12 @@ function calculateArea() {
 
         outputDiv.innerText = `area of a triangle is using heron's formula is ${result} units`
     } else{
-        outputDiv.innetText = "enter the valid side length"
+        outputDiv.innerText = "enter the valid side length"
     }
     
 }
 
-areaButton.addEventListener("click",calculateArea);
+
+
+areaButton.addEventListener("click", calculateArea );
+
